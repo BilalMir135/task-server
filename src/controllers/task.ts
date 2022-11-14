@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import Databse from "../providers/database";
+// import Databse from "../providers/database";
 import ResponseHandler from "../utils/handlers";
 
 class Task {
@@ -10,9 +10,9 @@ class Task {
   }
 
   public static async output(req: Request, res: Response) {
-    await Databse.client.set("test", 10);
-    const value = await Databse.client.get("test");
-    return ResponseHandler.success(res, value);
+    // await Databse.client.set("test", 10);
+    // const value = await Databse.client.get("test");
+    return ResponseHandler.success(res, "hello");
   }
 }
 
