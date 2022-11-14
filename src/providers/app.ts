@@ -1,9 +1,9 @@
-import Databse from "./database";
+// import Databse from "./database";
 import Express from "./express";
 
 class App {
   public loadServer(): void {
-    Databse.init();
+    // Databse.init();
 
     Express.init();
   }

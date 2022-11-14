@@ -18,6 +18,14 @@ class ResponseHandler {
       error,
     });
   }
+
+  public static exception<T>(res: Response) {
+    return res.status(HttpStatus.SERVER_ERROR).json({
+      status: HttpStatus.SERVER_ERROR,
+      message: ResMessage.FAILED,
+      error: "Something went wrong",
+    });
+  }
 }
 
 export default ResponseHandler;

@@ -1,3 +1,4 @@
+import bp from "body-parser";
 import express from "express";
 
 import { PORT } from "../constants/index";
@@ -12,6 +13,9 @@ class Express {
   }
 
   private mountRoutes(): void {
+    this.express.use(bp.json());
+    this.express.use(bp.urlencoded({ extended: true }));
+
     this.express = Routes.mountApi(this.express);
   }
 

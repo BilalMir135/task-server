@@ -1430,7 +1430,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"body-parser@npm:1.20.1":
+"body-parser@npm:1.20.1, body-parser@npm:^1.20.1":
   version: 1.20.1
   resolution: "body-parser@npm:1.20.1"
   dependencies:
@@ -5471,6 +5471,7 @@ __metadata:
     "@types/redis": ^4.0.11
     "@typescript-eslint/eslint-plugin": ^5.40.1
     "@typescript-eslint/parser": ^5.40.1
+    body-parser: ^1.20.1
     commitizen: ^4.2.5
     cz-conventional-changelog: ^3.3.0
     eslint: ^8.25.0
